@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <memory.h>
 
+#define BY_NAME 0
+#define BY_AVG_PRICE 1
+#define BY_DISTANCE 2
+#define BY_TIME 3
+
 
 List create() {
 	List l;

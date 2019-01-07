@@ -7,7 +7,6 @@
 #define toRadians(degrees) ((degrees) * M_PI / 180.0)
 
 #define TIME_FACTOR 3.7
-#define INFINITY 99999999
 #define DIRECTIONS 4
 #define NORTH 0
 #define EAST 1

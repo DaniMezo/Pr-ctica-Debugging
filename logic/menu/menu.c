@@ -5,9 +5,9 @@
 
 #define FIRST_OPTION 1
 #define LAST_OPTION 4
-#define BY_TIME 5
-#define BY_DISTANCE 4
-#define BY_AVG_PRICE 3
+#define BY_TIME 3
+#define BY_DISTANCE 2
+#define BY_AVG_PRICE 1
 
 void printWelcomeLine() {
 	printf("\n\t---===  Welcome to TripOrganizer  ===---\n");
@@ -33,7 +33,7 @@ int askUserForOption() {
 }
 
 int isCorrect(int option) {
-	return option < FIRST_OPTION && option > LAST_OPTION;
+	return option >= FIRST_OPTION && option <= LAST_OPTION;
 }
 
 int isExit(int option) {
@@ -58,7 +58,7 @@ char * readUserString() {
 		scanf("%c", &tmp);
 	} while (tmp != '\n');
 
-	resize(&ret, i + 1);
+	resize(&ret, i);
 
 	return ret;
 }
